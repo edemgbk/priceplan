@@ -139,7 +139,7 @@ const tiers = [
     title: 'Bronze',
     price: '0',
     description: ['10 users included', '2 GB of storage', 'Help center access', 'Email support'],
-    buttonText: 'Sign up for free',
+    buttonText: 'Subscribe',
     buttonVariant: 'outlined',
   },
   {
@@ -152,7 +152,7 @@ const tiers = [
       'Help center access',
       'Priority email support',
     ],
-    buttonText: 'Get started',
+    buttonText: 'Subscribe',
     buttonVariant: 'contained',
   },
   {
@@ -164,7 +164,7 @@ const tiers = [
       'Help center access',
       'Phone & email support',
     ],
-    buttonText: 'Contact us',
+    buttonText: 'Subscribe',
     buttonVariant: 'outlined',
   },
 ];
