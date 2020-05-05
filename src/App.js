@@ -39,14 +39,14 @@ componentDidMount(){
 
 export default App;
 
-const PlanCard = ({ title, year, description, imageURL }) => (
+const PlanCard = ({ grade, price, description, imageURL }) => (
     <div className="card">
       <img className="card-img-top" src="{imageUrl}" alt=" poster" />
       <div className="card-body">
-        <h5 className="card-title">{ title }</h5>
+        <h5 className="card-title">{ grade }</h5>
         <p className="card-text">{description}</p>
         <p className="card-text">
-          <small className="text-muted">{year}</small>
+          <small className="text-muted">{price}</small>
         </p>
       </div>
     </div>
