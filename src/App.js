@@ -24,7 +24,7 @@ constructor(props){
 }
 
 componentDidMount(){
-  fetch('https://api.airtable.com/v0/app1z2A9TV8V4VtTe/favorites?api_key=keyPelnAmMAmcLqh9')
+  fetch('https://api.airtable.com/v0/app1z2A9TV8V4VtTe/productsplan?api_key=keyPelnAmMAmcLqh9')
   .then((resp)=> resp.json())
   .then(data => {
     this.setState({ plans:data.records });
