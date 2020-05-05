@@ -37,7 +37,7 @@ componentDidMount(){
   render() {
     return (
 
-             <div className="container mt-5">
+        <div className="container mt-5">
         <div className="row">
            <div className="col">
             <div className="card-deck">
@@ -45,10 +45,13 @@ componentDidMount(){
             </div>
           </div>
         </div>
-
-        </div>
         //TODO
-       // <Pricing />
+        <Pricing />
+        </div>
+
+        
+        
+       
     );
   }
 }
