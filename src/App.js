@@ -44,20 +44,6 @@ export default App;
 
 
 
-  //       const PlanCard = ({ grade, price, description,buttonText }) => (
-  //   <div className="card">
-  //     <div className="card-body">
-  //       <h5 className="card-title">{ grade }</h5>
-  //       <p className="card-text">{description}</p>
-  //       <p className="card-text">
-  //         <small className="text-muted">{price}</small>
-  //       </p>
-  //     </div>
-  //   </div>
-  // );
-
-
-
          const Pricing = ({ title, price, description,buttonText }) => (
         // <div className="card-deck mb-3 text-center">
         <div className="card mb-4 box-shadow">
@@ -67,7 +53,35 @@ export default App;
           <div className="card-body">
             <h1 className="card-title pricing-card-title">{price} <small className="text-muted">/ mo</small></h1>
             <p>{description} </p>
-            <button type="button" className="btn btn-lg btn-block btn-outline-primary">{buttonText}</button>
+          
+
+            <button type="button" className="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">{buttonText}</button>
+
+            <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div className="modal-dialog" role="document">
+    <div className="modal-content">
+      <div className="modal-header">
+        <h5 className="modal-title" id="exampleModalLabel">Subscribe</h5>
+        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className="modal-body">
+        <form>
+          <div className="form-group">
+            <label for="recipient-name" className="col-form-label">Email:</label>
+            <input type="text" className="form-control" id="recipient-name"/>
+          </div>
+         
+        </form>
+      </div>
+      <div className="modal-footer">
+        <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" className="btn btn-primary" >Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>
           </div>
            </div>
             );
