@@ -1,3 +1,7 @@
+NO LONGER USED
+NEW lINK
+https://github.com/edemgbk/priceplanpage
+
 product pricing plan page
 draft
 airtable & react were used in this project
