@@ -27,8 +27,8 @@ componentDidMount(){
         <div className="container mt-5">
         <div className="row">
            <div className="col">
-            <div className="card-deck">
-            {this.state.plans.map(plan => <PlanCard {...plan.fields} /> )}
+            <div className="card-deck mb-3 text-center">
+            {this.state.plans.map(plan => <Pricing{...plan.fields} /> )}
             </div>
           </div>
         </div>
@@ -44,31 +44,30 @@ export default App;
 
 
 
-        const PlanCard = ({ grade, price, description,buttonText }) => (
-    <div className="card">
-      <div className="card-body">
-        <h5 className="card-title">{ grade }</h5>
-        <p className="card-text">{description}</p>
-        <p className="card-text">
-          <small className="text-muted">{price}</small>
-        </p>
-        <button type="button" className="btn btn-lg btn-block btn-outline-primary">{buttonText}</button>
-      </div>
-    </div>
-  );
+  //       const PlanCard = ({ grade, price, description,buttonText }) => (
+  //   <div className="card">
+  //     <div className="card-body">
+  //       <h5 className="card-title">{ grade }</h5>
+  //       <p className="card-text">{description}</p>
+  //       <p className="card-text">
+  //         <small className="text-muted">{price}</small>
+  //       </p>
+  //     </div>
+  //   </div>
+  // );
 
 
 
-        //  const Pricing = ({ title, price, description }) => (
+         const Pricing = ({ title, price, description,buttonText }) => (
         // <div className="card-deck mb-3 text-center">
-        // <div className="card mb-4 box-shadow">
-        //   <div className="card-header">
-        //     <h4 className="my-0 font-weight-normal">{title}</h4>
-        //   </div>
-        //   <div className="card-body">
-        //     <h1 className="card-title pricing-card-title">{price} <small className="text-muted">/ mo</small></h1>
-        //     <p>jviyyvu </p>
-        //     <button type="button" className="btn btn-lg btn-block btn-outline-primary">{buttonText}</button>
-        //   </div>
-        //   </div>
-        //     );
+        <div className="card mb-4 box-shadow">
+          <div className="card-header">
+            <h4 className="my-0 font-weight-normal">{title}</h4>
+          </div>
+          <div className="card-body">
+            <h1 className="card-title pricing-card-title">{price} <small className="text-muted">/ mo</small></h1>
+            <p>{description} </p>
+            <button type="button" className="btn btn-lg btn-block btn-outline-primary">{buttonText}</button>
+          </div>
+           </div>
+            );
